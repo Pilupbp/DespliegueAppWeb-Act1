@@ -1,3 +1,4 @@
+
 ![](computacion-nube.png width=800)
 ### Actividad 1. Tarea Individual. Comandos.
 ### Pilar Bermejo 2 DAW
@@ -67,7 +68,9 @@ Determina la ruta para alcanzar un host mediante el envío de paquetes “echo�
 ##### 1.3 ¿Por qué responde a la pregunta?
 Porque podemos ver los diferentes **saltos en los diferentes nodos porque se establece la conexión**, si no se establece y no tuviéramos conexión a internet nos devolvería el mensaje mencionado anteriormente.
 
-##### 1.4 ¿Cómo se interpreta la salida?** ![](Imagen%202.png "1.2 Traceroute a google.com")
+##### 1.4 ¿Cómo se interpreta la salida?** 
+
+![](Imagen%202.png "1.2 Traceroute a google.com")
 
 Lo primero que hace el comando al ser ejecutado es mostrar la dirección **IP real del dominio de la web que hemos elegido.** Luego nos dice todos los nodos y routers por los que pasa el mensaje de prueba que hemos enviado, sus direcciones IP y la** latencia **de cada uno de ellos hasta llegar a su destino.
 
@@ -90,7 +93,9 @@ Si ponemos **ifconfig seguido del nombre de la interface**, solo muestra el esta
 Porque sabemos si nos ha asignado una IP de Red y sabemos si el **puerto está activo y transmitiendo. **
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%203.png "1.3 Ifconfig")
+
 Puedo ver si el puerto está activo, la dirección IP que tiene y la MAC.
 
 ### 2. ¿CÓMO SABEMOS SI NUESTRO SERVIDOR ES ACCESIBLE DESDE INTERNET?
@@ -108,10 +113,15 @@ Nos permite **supervisar las conexiones de red** tanto entrantes como salientes,
 *$ netstat -l * (Todas las conexiones en estado de escucha, con -lt todos los TCP y con -lu todos los UDP)
 
 
-##### 1.3 ¿Por qué responde a la pregunta?** Nos indica qué **puertos están abiertos y si los programas están escuchando** en los puertos permitiéndonos llevar un mejor control sobre estos. Nos ofrece una vía fácil para supervisar y solucionar problemas relacionados con la red y determinar el rendimiento del tráfico de red
+##### 1.3 ¿Por qué responde a la pregunta?** 
+Nos indica qué **puertos están abiertos y si los programas están escuchando** en los puertos permitiéndonos llevar un mejor control sobre estos. Nos ofrece una vía fácil para supervisar y solucionar problemas relacionados con la red y determinar el rendimiento del tráfico de red
 
-##### 1.4 ¿Cómo se interpreta la salida?** ![](Imagen%204.png "1.4 Comando netstat -a")
+##### 1.4 ¿Cómo se interpreta la salida?**
+
+![](Imagen%204.png "1.4 Comando netstat -a")
+
 Tipo de protocolo, dirección local y remota y el Estado.
+
 
 UFW:
 Comando que nos permite configurar reglas y administrar el firewall. Pero no hemos podido ejecutarlo en el Terminal de MAC.
@@ -132,7 +142,9 @@ HOST:
 Porque con la información que devuelve **obtenemos la dirección IP **a la que está asociado ese dominio.
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%205.png "1.5 Comando Host")
+
 Nos devuelve la dirección IP .
 
 DIG:
@@ -148,6 +160,7 @@ Ofrece la misma consulta que HOST pero con más información
 A devolvernos los registros DNS podemos **ver a la IP a la que está asociado el dominio.**
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%206.png "1.6 Respuesta consulta dig")
 
 
@@ -167,6 +180,7 @@ Primero ejecutamos el comando y a continuación las URL que queramos conocer las
 Nos da información sobre un dominio determinado.
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%207.png "1.7 Comando nslookup")
  
 
@@ -183,7 +197,9 @@ Sirve para para consultar la información sobre un dominio de Internet, **quién
 Porque nos ofrece datos de quién es el dueño del dominio o donde está registrado, DNS, etc…
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%208.png "1.8 Whois")
+
 Nos da la información del registrador con contactos administrativo y técnico, en esta ocasión nos devuelve Verisign que opera una gran variedad de infraestructuras de red que incluye dos de los trece servidores de internet.
 
 
@@ -191,6 +207,7 @@ Nos da la información del registrador con contactos administrativo y técnico, 
 
 CURL:
 Lo primero es comprobar que Curl está instalado con el comando *$ curl --version*
+
 ![](Imagen%209.png "1.9 Comprobando Curl")
 
 ##### 1.1 ¿Qué hace?
@@ -214,6 +231,7 @@ Tiene más usos cuando tienes un servidor Proxy para hacer una solicitud GET o P
 El comando nos dice si podemos acceder a la URL o si no podemos conectar al servidor.
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%2010.png "1.10 Datos de ejecución de Curl con -v")
  
 WGET:
@@ -236,7 +254,10 @@ Antes de eso hemos tenido que instalarlo mediante el comando *$ brew install wge
 Porque nos muestra cómo podemos acceder a servidores a **descargar la información que necesitemos.** Aunque algunos servidores pueden hable bloqueado el acceso a wget.
 
 ##### 1.4 ¿Cómo se interpreta la salida?
+
 ![](Imagen%2011.png "1.11 Comando Wget")
+
+
 ![](Imagen%2012.png "1.12 Archivo descargado.")
 
 
