@@ -122,6 +122,8 @@ Nos indica qué **puertos están abiertos y si los programas están escuchando**
 
 Tipo de protocolo, dirección local y remota y el Estado.
 
+Podríamos utilizar otro comando para ver en que estado está nuestro firewall que nos permitirá establecer determinadas conexiones entrantes y salientes. Aunque mediante comandos no hemos podido realizarlo en el equipo. Podemos ver si lo tenemos activado y su configuración.
+![](Imagen%213.png)
 
 UFW:
 Comando que nos permite configurar reglas y administrar el firewall. Pero no hemos podido ejecutarlo en el Terminal de MAC.
